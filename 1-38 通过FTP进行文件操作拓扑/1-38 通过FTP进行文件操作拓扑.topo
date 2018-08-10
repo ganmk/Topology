@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="781CC3C0-03DB-45ef-AE45-54E812FC5BD8" name="S1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F0-78-B0" com_port="2000" bootmode="0" cx="163.000000" cy="213.000000" edit_left="177" edit_top="269">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="C7BC19C2-3719-4493-B7E8-C355A123E97E" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-CD-10-82" com_port="2001" bootmode="0" cx="484.000000" cy="216.000000" edit_left="501" edit_top="272">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="30896828-76E5-4db1-9D72-1FFB2720F93A" name="PC-1" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-1E-59-B3 -ipaddr 10.0.1.1 -ipmask 255.255.255.0 -gateway 10.0.1.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-1E-59-B3" com_port="0" bootmode="0" cx="180.000000" cy="389.000000" edit_left="207" edit_top="443">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="670E08E8-51C2-4608-B052-D724C07CE763" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-96-02-31 -ipaddr 10.0.2.1 -ipmask 255.255.255.0 -gateway 10.0.2.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-96-02-31" com_port="0" bootmode="0" cx="504.000000" cy="374.000000" edit_left="531" edit_top="428">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="781CC3C0-03DB-45ef-AE45-54E812FC5BD8" destDeviceID="30896828-76E5-4db1-9D72-1FFB2720F93A">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="194.151840" srcBoundRect_Y="282.983704" srcOffset_X="25.000000" srcOffset_Y="-3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="202.848160" tarBoundRect_Y="373.016296" tarOffset_X="-95.000000" tarOffset_Y="8.000000" />
+        </line>
+        <line srcDeviceID="781CC3C0-03DB-45ef-AE45-54E812FC5BD8" destDeviceID="C7BC19C2-3719-4493-B7E8-C355A123E97E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="233.181885" srcBoundRect_Y="240.403564" srcOffset_X="-7.000000" srcOffset_Y="8.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="467.818115" tarBoundRect_Y="242.596436" tarOffset_X="-44.000000" tarOffset_Y="-18.000000" />
+        </line>
+        <line srcDeviceID="670E08E8-51C2-4608-B052-D724C07CE763" destDeviceID="C7BC19C2-3719-4493-B7E8-C355A123E97E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="525.576965" srcBoundRect_Y="358.158112" srcOffset_X="16.000000" srcOffset_Y="1.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="516.423035" tarBoundRect_Y="285.841888" tarOffset_X="22.000000" tarOffset_Y="3.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="393" top="203" right="472" bottom="220" content="10.0.1.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="98" top="345" right="162" bottom="377" content="10.0.1.1&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="544" top="345" right="608" bottom="362" content="10.0.2.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="551" top="269" right="630" bottom="286" content="10.0.2.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="276" top="454" right="476" bottom="471" content="配置 通过 FTP 进行文件操作" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
