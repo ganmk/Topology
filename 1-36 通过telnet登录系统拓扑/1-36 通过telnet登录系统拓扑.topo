@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="3B877DE0-E757-47fa-8854-FDEFB9617385" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-1C-6F-56" com_port="2002" bootmode="0" cx="231.000000" cy="400.000000" edit_left="258" edit_top="454">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="2430180F-88FA-4e29-9511-A36F929168FE" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-C3-2C-70" com_port="2001" bootmode="0" cx="191.000000" cy="228.000000" edit_left="218" edit_top="282">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="B0DF3C9C-A84C-4b10-8F3C-9430248F88F0" name="S1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-F6-62-7E" com_port="2003" bootmode="0" cx="454.000000" cy="291.000000" edit_left="481" edit_top="345">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="863575EC-3993-4cab-9884-D7B204D69391" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-99-24-BB" com_port="2000" bootmode="0" cx="625.000000" cy="125.000000" edit_left="652" edit_top="179">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="2430180F-88FA-4e29-9511-A36F929168FE" destDeviceID="B0DF3C9C-A84C-4b10-8F3C-9430248F88F0">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="259.995697" srcBoundRect_Y="265.059814" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="439.004303" tarBoundRect_Y="307.940186" tarOffset_X="2.000000" tarOffset_Y="-33.000000" />
+        </line>
+        <line srcDeviceID="3B877DE0-E757-47fa-8854-FDEFB9617385" destDeviceID="B0DF3C9C-A84C-4b10-8F3C-9430248F88F0">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="296.797150" srcBoundRect_Y="408.036377" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="442.202850" tarBoundRect_Y="336.963623" tarOffset_X="-20.000000" tarOffset_Y="22.000000" />
+        </line>
+        <line srcDeviceID="B0DF3C9C-A84C-4b10-8F3C-9430248F88F0" destDeviceID="863575EC-3993-4cab-9884-D7B204D69391">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="511.985168" srcBoundRect_Y="287.920837" srcOffset_X="2.000000" srcOffset_Y="11.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="621.014832" tarBoundRect_Y="182.079178" tarOffset_X="-7.000000" tarOffset_Y="26.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="196" top="307" right="260" bottom="324" content="10.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="214" top="473" right="278" bottom="490" content="10.1.1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="776" top="322" right="855" bottom="339" content="10.1.1.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="450" top="452" right="703" bottom="469" content="1-36 配置 通过 telnet登录系统拓扑" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="197" top="332" right="261" bottom="349" content="普通用户" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="204" top="504" right="283" bottom="521" content="网络管理员" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
