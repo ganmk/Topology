@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="A37CFD77-57E9-4b88-807F-F0BBC43D641B" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A6-3A-E5" com_port="2001" bootmode="0" cx="182.000000" cy="485.000000" edit_left="210" edit_top="539">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="74132CD7-3AE5-4d3f-A57F-F2305CD55FB5" name="R4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-8E-32-23" com_port="2003" bootmode="0" cx="754.000000" cy="379.000000" edit_left="781" edit_top="433">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="5D06E209-63B6-4ae8-80B1-083524C78B89" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-45-25-98" com_port="2000" bootmode="0" cx="184.000000" cy="238.000000" edit_left="211" edit_top="292">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="A8777DA7-8527-4a01-A838-4548D4FE8541" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-CA-3C-9C" com_port="2002" bootmode="0" cx="402.000000" cy="372.000000" edit_left="429" edit_top="426">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="5D06E209-63B6-4ae8-80B1-083524C78B89" destDeviceID="A8777DA7-8527-4a01-A838-4548D4FE8541">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="247.789398" srcBoundRect_Y="287.613678" srcOffset_X="-3.000000" srcOffset_Y="-14.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="392.210602" tarBoundRect_Y="376.386322" tarOffset_X="-57.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="A37CFD77-57E9-4b88-807F-F0BBC43D641B" destDeviceID="A8777DA7-8527-4a01-A838-4548D4FE8541">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="247.412933" srcBoundRect_Y="492.269714" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="390.587067" tarBoundRect_Y="418.730286" tarOffset_X="-50.000000" tarOffset_Y="-9.000000" />
+        </line>
+        <line srcDeviceID="A8777DA7-8527-4a01-A838-4548D4FE8541" destDeviceID="74132CD7-3AE5-4d3f-A57F-F2305CD55FB5">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="472.175232" srcBoundRect_Y="399.858612" srcOffset_X="-9.000000" srcOffset_Y="7.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="737.824768" tarBoundRect_Y="405.141388" tarOffset_X="-37.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="392" top="539" right="638" bottom="556" content="10-1 配置 基本的访问控制列表拓扑" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="353" top="445" right="448" bottom="462" content="10.0.23.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="583" top="425" right="678" bottom="442" content="10.0.34.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="322" top="315" right="417" bottom="332" content="10.0.13.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
