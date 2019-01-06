@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="D1DDC28D-FFC1-4bfa-841B-B3C23401522D" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-0B-1F-3B" com_port="2002" bootmode="0" cx="751.000000" cy="320.000000" edit_left="778" edit_top="374">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="788C6E20-F1BA-44e6-B60D-77AA4806C6AE" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-95-63-FB" com_port="2001" bootmode="0" cx="319.000000" cy="317.000000" edit_left="346" edit_top="371">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="788C6E20-F1BA-44e6-B60D-77AA4806C6AE" destDeviceID="D1DDC28D-FFC1-4bfa-841B-B3C23401522D">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="389.182739" srcBoundRect_Y="344.299866" srcOffset_X="11.000000" srcOffset_Y="-40.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="734.817261" tarBoundRect_Y="346.700134" tarOffset_X="-75.000000" tarOffset_Y="7.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="89" top="337" right="259" bottom="354" content="Loopback 0:10.0.1.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="839" top="341" right="1017" bottom="358" content="Loopback 0:10.0.2.2/24 " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="475" top="391" right="660" bottom="408" content="RIP 路由协议基本配置拓扑" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
